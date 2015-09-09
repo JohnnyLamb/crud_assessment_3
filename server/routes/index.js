@@ -63,7 +63,7 @@ router.put('/bug/:id', function(req, res, next) {
 });
 
 // DELETE request for single bug
-router.put('/bug/:id', function(req, res, next) {
+router.delete('/bug/:id', function(req, res, next) {
   Bug.findByIdAndRemove(req.params.id,function(err, data) {
     if (err) {
       res.json({
