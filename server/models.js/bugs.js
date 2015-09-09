@@ -4,11 +4,11 @@ var Schema = mongoose.Schema;
 var Bug = new Schema (
 {
   name: String,
-  age: Number
+  age: String
   }
 );
 
-process.env.DB_HOST = 'mongodb://localhost/animals';
+process.env.DB_HOST = 'mongodb://localhost/bugs';
 
 mongoose.connect(process.env.DB_HOST);
 
